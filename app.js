@@ -45,6 +45,13 @@ app.use((err, req, res, next) => {
     err.isOperational = true;
     return errorHandle(err, res);
   }
+
+  if (err.name === 'CastError') {
+    err.message = '無此 id 資料，請確認後重新輸入！';
+    err.isOperational = true;
+    return errorHandle(err, res);
+  }
+
   errorHandle(err, res)
 })
 
