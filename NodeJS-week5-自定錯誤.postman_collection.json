@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "f435d8db-d900-4ab8-a067-baf3791f6c60",
+		"name": "NodeJS-week5-自定錯誤",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得全部貼文",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week5-middleware.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodejs-week5-middleware",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week5-middleware.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodejs-week5-middleware",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"week5由postman修改的貼文\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week5-middleware.herokuapp.com/post/6277263ddf9e5ab720b89840",
+					"protocol": "https",
+					"host": [
+						"nodejs-week5-middleware",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"6277263ddf9e5ab720b89840"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"week5由postman新增的貼文\",\n    \"user\": \"626cde7cde00e23386e81da8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week5-middleware.herokuapp.com/post",
+					"protocol": "https",
+					"host": [
+						"nodejs-week5-middleware",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得單一貼文",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week5-middleware.herokuapp.com/post/62763f4a44bc86b61d74c632",
+					"protocol": "https",
+					"host": [
+						"nodejs-week5-middleware",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"62763f4a44bc86b61d74c632"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單一貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week5-middleware.herokuapp.com/post/62763f4a44bc86b61d74c632",
+					"protocol": "https",
+					"host": [
+						"nodejs-week5-middleware",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"62763f4a44bc86b61d74c632"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
